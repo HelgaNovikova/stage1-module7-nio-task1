@@ -27,7 +27,7 @@ public class FileReader {
             email = lines.get(2).substring(7);
             phone = Long.parseLong(lines.get(3).substring(7));
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
         return new Profile(name, age, email, phone);
     }
